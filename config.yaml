@@ -18,6 +18,6 @@ exporters:
   - file: ./exporters/product_csv.yaml
     disabled: false
 
-# finisher:
-#   file: ./finisher/finisher.rb
-#   disabled: false
+finisher:
+  file: ./finisher/finisher.rb
+  disabled: false
