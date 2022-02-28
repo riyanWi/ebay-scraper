@@ -10,7 +10,8 @@ listings.each do |listing|
 
     product['price'] = listing.css('span.s-item__price').text
 
-    product['url'] = listing.css('a.s-item__link')['href'] unless listing.css('a.s-item__link').nill?
+    item_link = listing.at_css('a.s-item__link')
+    product['url'] = item_link['href'] unless item_link.nil?
     
     product['_collection'] = "listings"
     
