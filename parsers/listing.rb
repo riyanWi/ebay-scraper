@@ -17,4 +17,13 @@ listings.each do |listing|
     
     outputs << product
 
+    pages << {
+        url: product['url'],
+        page_type: 'details',
+        vars: {
+            title: product['title'],
+            price: product['price'] 
+        }
+    }
+
 end
