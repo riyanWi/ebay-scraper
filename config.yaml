@@ -1,6 +1,7 @@
 seeder:
   file: ./seeder/seeder.rb
   disabled: false
+
 parsers:
   - page_type: listing
     file: ./parsers/listing.rb
@@ -8,3 +9,15 @@ parsers:
   - page_type: details
     file: ./parsers/details.rb
     disabled: false
+
+exporters:
+  - file: ./exporters/product_last10_json.yaml
+    disabled: false
+#   - file: ./exporters/product_json.yaml
+#     disabled: false
+#   - file: ./exporters/product_csv.yaml
+#     disabled: false
+
+# finisher:
+#   file: ./finisher/finisher.rb
+#   disabled: false
