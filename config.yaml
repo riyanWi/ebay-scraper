@@ -13,8 +13,8 @@ parsers:
 exporters:
   - file: ./exporters/product_last10_json.yaml
     disabled: false
-#   - file: ./exporters/product_json.yaml
-#     disabled: false
+  - file: ./exporters/product_json.yaml
+    disabled: false
 #   - file: ./exporters/product_csv.yaml
 #     disabled: false
 
